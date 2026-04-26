@@ -7,8 +7,6 @@ class YabaiNg < Formula
 
   depends_on :macos => :big_sur
 
-  conflicts_with "yabai", because: "both install a yabai binary"
-
   def install
     if build.head?
       system "make", "-j1", "install"
