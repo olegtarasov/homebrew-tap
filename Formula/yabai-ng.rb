@@ -1,8 +1,8 @@
 class YabaiNg < Formula
   desc "Personal fork of yabai with managed spaces"
   homepage "https://github.com/olegtarasov/yabai-ng"
-  url "https://github.com/olegtarasov/yabai-ng/releases/download/v26.1.0/yabai-ng-v26.1.0.tar.gz"
-  sha256 "ac2204784f559322e1fbbc10894ef4b1723a7fab64fa7479346183f55f76899a"
+  url "https://github.com/olegtarasov/yabai-ng/releases/download/v26.1.1/yabai-ng-v26.1.1.tar.gz"
+  sha256 "c70251aafb7e2096e7d137ba16fd89091cbcdd48f749b75b7549461a35b9f528"
   head "https://github.com/olegtarasov/yabai-ng.git", branch: "master"
 
   depends_on :macos => :big_sur
