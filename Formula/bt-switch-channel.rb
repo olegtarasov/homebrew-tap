@@ -1,9 +1,9 @@
 class BtSwitchChannel < Formula
   desc "Switch paired-host channels on Keychron and Logitech wireless devices"
   homepage "https://github.com/olegtarasov/bt-switch-channel"
-  url "https://github.com/olegtarasov/bt-switch-channel/releases/download/v0.1.1/bt-switch-channel-0.1.1-macos-arm64.tar.gz"
-  version "0.1.1"
-  sha256 "f295773ddbbf1ddfd1a119ae2a8565c0848d22bc31e61f6d010338e8a208879c"
+  url "https://github.com/olegtarasov/bt-switch-channel/releases/download/v0.1.2/bt-switch-channel-0.1.2-macos-arm64.tar.gz"
+  version "0.1.2"
+  sha256 "fb0fb2afe8a9e8ee99c732fee58e1ccc8e6ab43440afd0da90be18eb07ba1451"
   license "MIT"
 
   depends_on arch: :arm64
