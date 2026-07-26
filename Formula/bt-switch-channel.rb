@@ -8,7 +8,11 @@ class BtSwitchChannel < Formula
   depends_on "pkgconf" => :build
   depends_on xcode: ["16.0", :build]
   depends_on "hidapi"
-  depends_on macos: :ventura
+  depends_on :macos
+
+  on_macos do
+    depends_on macos: :ventura
+  end
 
   def install
     system "swift", "build", "--disable-sandbox", "--configuration", "release"
