@@ -1,12 +1,12 @@
 class BtSwitchChannel < Formula
   desc "Switch paired-host channels on Keychron and Logitech wireless devices"
   homepage "https://github.com/olegtarasov/bt-switch-channel"
-  url "https://github.com/olegtarasov/bt-switch-channel/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "6a7da5b031635b6f5aa4c738bb8dd91c97e5e96ac64dccfbfe950a82755930b5"
+  url "https://github.com/olegtarasov/bt-switch-channel/releases/download/v0.1.1/bt-switch-channel-0.1.1-macos-arm64.tar.gz"
+  version "0.1.1"
+  sha256 "f295773ddbbf1ddfd1a119ae2a8565c0848d22bc31e61f6d010338e8a208879c"
   license "MIT"
 
-  depends_on "pkgconf" => :build
-  depends_on xcode: ["16.0", :build]
+  depends_on arch: :arm64
   depends_on "hidapi"
   depends_on :macos
 
@@ -15,8 +15,7 @@ class BtSwitchChannel < Formula
   end
 
   def install
-    system "swift", "build", "--disable-sandbox", "--configuration", "release"
-    bin.install ".build/release/bt-switch-channel"
+    bin.install "bt-switch-channel"
   end
 
   test do
